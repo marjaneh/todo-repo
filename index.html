@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>To-Do List</title>
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="todo.css">
+			
+	</head>
+	<body>
+		 <h1>To-Do List</h1>
+		
+		<div class="form-group">
+			<input type="text" class="form-control" id="InputTask" placeholder="Enter new task">
+			<button id="btnAdd" class="btn btn-primary">Add Task</button>
+		</div>
+		<hr/>
+		
+		<div class="row">
+			<div class="col-lg-4">
+				<h3>Pending List</h3>
+				<div class="task-list"><ul id="pending-task"></ul></div>
+			</div>
+			<div class="col-lg-4">
+				<h3>Completed List</h3>
+				<div class="task-list"><ul id="complete-task"></ul></div>
+			</div>
+			<div class="col-lg-4">
+				<h3>Removed List</h3>
+				<div class="task-list"><ul id="remove-task"></ul></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="todo.js"></script>
+	</body>
+</html>
