@@ -1,0 +1,41 @@
+	body{
+		margin:0;
+		padding:0;
+	}
+	
+	h3{
+		margin-left:10px;
+	}
+	.form-group, h1{
+		margin-left:10px;
+	}
+
+	.form-control{
+		width:65%;
+		display:inline-block;
+		margin:5px;
+	}
+	
+	.form-control#InputTask{
+		width:40%;
+		display:inline-block;
+	}
+	
+	.task-list{
+		background:#eee;
+		border:1px solid #666;
+		padding:10px;
+		margin:10px;
+		width:90%;
+	}
+
+	.task-list ul{
+		list-style:none;
+		padding-left:0;
+	}
+	
+
+	
+	
+
+		
