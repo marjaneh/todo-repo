@@ -106,7 +106,7 @@
 				
 	};
 	
-	var onClickAdd = function(){
+	var onAddClick = function(){
 		if(inputTask.value.trim().length > 0){
 			addPendingTask(createPendingList());
 			inputTask.value = "";
@@ -114,12 +114,12 @@
 		}
 	};
 	
-	btnAdd.addEventListener('click', onClickAdd);
+	btnAdd.addEventListener('click', onAddClick);
 	inputTask.addEventListener('keyup', function(event){
 		var code = event.keyCode;
 		
 		if(code == 13){
-			onClickAdd();
+			onAddClick();
 		}
 	});
 	inputTask.focus();
