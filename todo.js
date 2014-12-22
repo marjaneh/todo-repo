@@ -31,8 +31,8 @@
 		li.appendChild(txtPending);
 		li.appendChild(btnPending);
 		
-		chkPendingList.addEventListener('click', onClickCheck);
-		btnPending.addEventListener('click', onClickRemove);
+		chkPendingList.addEventListener('click', onCheckClick);
+		btnPending.addEventListener('click', onRemoveClick);
 			
 		return li;
 	};
@@ -73,7 +73,7 @@
 		lists.remove.appendChild(task);
 	}
 	
-	var onClickCheck = function(event){
+	var onCheckClick = function(event){
 		var parentNode = event.target.parentElement;
 		
 		for (i = 0; i < parentNode.childNodes.length; i++) {
@@ -90,7 +90,7 @@
 		
 	};
 	
-	var onClickRemove = function(event){
+	var onRemoveClick = function(event){
 		var parentNode = event.target.parentElement;
 		
 		for (i = 0; i < parentNode.childNodes.length; i++) {
